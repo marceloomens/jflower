@@ -1,7 +1,7 @@
 html {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  font-size: 2.5vh;
+  font-size: 16px;
 }
 body {
   background: repeat url("/img/swirl.png");
@@ -25,7 +25,6 @@ section#content {
   padding: 1rem;
 }
 section#content > div {
-  padding-bottom: 28px;
   position: relative;
   width: 100%;
 }
@@ -48,6 +47,7 @@ h1 {
   font-family: 'Carter One', cursive;
   font-size: 2.5rem;
   font-weight: 600;
+  text-align: center;
 }
 h2 {
   font-family: 'Great Vibes', cursive;
@@ -98,9 +98,6 @@ strong {
   font-size: 70%;
 }
 @media (min-width: 600px) {
-  html {
-    font-size: 16px;
-  }
   main {
     grid-template-columns: calc(100vw / 2) calc(100vw / 2);
     grid-template-rows: minmax(100vh, auto);
@@ -116,13 +113,6 @@ strong {
     max-width: 400px;
     order: 1;
     padding-bottom: 0;
-  }
-  h1 {
-    font-size: 2.5rem;
-    text-align: center;
-  }
-  h2 {
-    font-size: 2rem;
   }
   p {
     margin-left: 2rem;
