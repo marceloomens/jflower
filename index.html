@@ -4,11 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- base href="https://www.liyan.nl/index.html" -->
-    <link rel="stylesheet" href="/css//normalize.css">
+    <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/fontawesome.min.css">
-    <link rel="stylesheet" href="/css/brands.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Carter+One&family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="preload" href="/css/fontawesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="/css/brands.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Carter+One&family=Open+Sans:wght@300;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" href="/css/fontawesome.min.css">
+      <link rel="stylesheet" href="/css/brands.min.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Carter+One&family=Open+Sans:wght@300;600&display=swap">
+    </noscript>
+    <script src="/js/cssrelpreload.js" async></script>
     <title>Kong Pao kip — huisgemaakt en thuisbezorgd</title>
   </head>
   <body>
