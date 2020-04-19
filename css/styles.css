@@ -1,7 +1,7 @@
 html {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  font-size: 2vh;
+  font-size: 2.5vh;
 }
 body {
   background: repeat url("/img/swirl.png");
@@ -11,7 +11,7 @@ body {
 main {
   display: grid;
   grid-template-columns: 100vw;
-  grid-template-rows: calc(100vh / 2) calc(100vh / 2);
+  grid-template-rows: calc(100vh / 2) auto;
 }
 section#visual {
   background-image: url( "/img/kongpaokip@600x800.jpg" );
@@ -21,16 +21,13 @@ section#visual {
 section#content {
   align-items: flex-end;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: column-reverse;
   padding: 1rem;
 }
 section#content > div {
-  width: 100%;
-}
-section#content > div:first-child{
+  padding-bottom: 28px;
   position: relative;
-  text-align: center;
+  width: 100%;
 }
 div.ampersand {
   position: absolute;
@@ -45,16 +42,12 @@ div.ampersand h3 {
   font-family: 'Great Vibes', cursive;
   font-size: 10rem;
   font-weight: 400;
-  line-height: 0.8;
-  margin-bottom: 0;
   margin-top: 0;
 }
 h1 {
   font-family: 'Carter One', cursive;
   font-size: 2.5rem;
   font-weight: 600;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 h2 {
   font-family: 'Great Vibes', cursive;
@@ -76,6 +69,15 @@ button:hover, button:focus {
 }
 button:active {
   background-color: #128C7E;
+}
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+td {
+  border: 1px solid #FFF;
+  padding: 2px 10px;
+  text-align: center;
 }
 strong {
   font-weight: 600;
@@ -101,27 +103,31 @@ strong {
   }
   main {
     grid-template-columns: calc(100vw / 2) calc(100vw / 2);
-    grid-template-rows: 100vh;
+    grid-template-rows: minmax(100vh, auto);
   }
   section#visual {
+    max-height: 100vh;
     order: 2;
-  }
-  section#content {
-    align-self: center;
-    height: 100%;
-    max-height: 450px;
-    order: 1;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
   }
   section#content > div {
     max-width: 400px;
+    order: 1;
+    padding-bottom: 0;
   }
-  h1, h2 {
+  h1 {
     font-size: 2.5rem;
+    text-align: center;
   }
   h2 {
     font-size: 2rem;
   }
   p {
-    padding-left: 2rem;
+    margin-left: 2rem;
+  }
+  .mobile {
+    display: none;
   }
 }
