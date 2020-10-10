@@ -5,7 +5,7 @@ html {
 }
 body {
   background: repeat url("/img/swirl.png");
-  background-color: #E32400;
+  background-color: rgb(145, 185, 238);
   color: #FFF;
 }
 main {
@@ -14,8 +14,8 @@ main {
   grid-template-rows: calc(100vh / 2) auto;
 }
 section#visual {
-  background-image: url( "/img/kongpaokip@600x800.jpg" );
-  background-position: center;
+  background-image: url( "/img/flowercake@1200x1200.jpeg" );
+  background-position: left;
   background-size: cover;
 }
 section#content {
@@ -31,7 +31,7 @@ section#content > div {
 div.ampersand {
   position: absolute;
   left: 50%;
-  margin-left: -75px;
+  margin-left: -125px;
   text-align: center;
   width: 150px;
   z-index: -1;
@@ -44,15 +44,15 @@ div.ampersand h3 {
   margin-top: 0;
 }
 h1 {
-  font-family: 'Carter One', cursive;
-  font-size: 2.5rem;
-  font-weight: 600;
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.5rem;
+  font-weight: normal;
   text-align: center;
 }
 h2 {
-  font-family: 'Great Vibes', cursive;
-  font-size: 2rem;
-  font-weight: 400;
+  font-family: 'Carter One', cursive;
+  font-size: 1.2rem;
+  font-weight: normal;
 }
 button {
   background-color: #25D366;
