@@ -1,0 +1,14 @@
+section#content {
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: minmax(auto, 100vw);
+  grid-template-rows: repeat(4, auto);
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
