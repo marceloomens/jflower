@@ -1,12 +1,52 @@
+body {
+  background: repeat url("/img/swirl.png");
+  background-color: rgb(241, 39, 124);
+  color: #FFF;
+}
+
 section.full {
   margin: -8px;
 }
 
 section#mosaic {
+  --element-dimension: calc((100vw - 8px) / 3);
+  box-sizing: border-box;
   display: grid;
-  grid-gap: 0px;
-  grid-template-columns: 100vw;
-  grid-template-rows: auto;
+  gap: 2px;
+  grid-auto-rows: var(--element-dimension);
+  grid-template-columns: repeat(3, var(--element-dimension));
+  max-width: 100vw;
+  padding: 2px;
+  width: 100vw;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  margin-right: 35%;
+}
+dt {
+  grid-column: 1;
+  grid-row: span 2;
+  text-align: right;
+}
+dd {
+  grid-column-start: 2;
+  margin: 0;
+  text-align: right;
+}
+dt, dt + dd {
+  border-top: none solid white;
+  padding-top: 2px;
+  margin-top: 8px;
+}
+dt:first-child, dt:first-child + dd {
+  padding-top: 0;
+  margin-top: 0;
 }
 
 picture > img {
