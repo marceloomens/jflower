@@ -19,11 +19,9 @@ section#mosaic {
   padding: 2px;
   width: 100vw;
 }
-
 h1, h2 {
   text-align: center;
 }
-
 dl {
   display: grid;
   grid-template-columns: 3fr 2fr;
@@ -48,7 +46,30 @@ dt:first-child, dt:first-child + dd {
   padding-top: 0;
   margin-top: 0;
 }
-
+figure {
+  margin: 0;
+  position: relative;
+}
+figure:hover {
+  cursor: pointer;
+}
+figure:hover figcaption {
+  opacity: 1;
+}
+figcaption {
+  background: rgba(0, 0, 0, 0.7);
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.4s ease;
+}
+figcaption table {
+  width: 100%;
+}
 picture > img {
   max-width: 100%;
   width: 100%;
