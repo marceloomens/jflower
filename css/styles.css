@@ -8,7 +8,7 @@ section.full {
   margin: -8px;
 }
 
-section#mosaic {
+section.mosaic {
   --element-dimension: calc((100vw - 8px) / 3);
   box-sizing: border-box;
   display: grid;
@@ -19,58 +19,33 @@ section#mosaic {
   padding: 2px;
   width: 100vw;
 }
-h1, h2 {
-  text-align: center;
-}
-dl {
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  margin-right: 35%;
-}
-dt {
-  grid-column: 1;
-  grid-row: span 2;
-  text-align: right;
-}
-dd {
-  grid-column-start: 2;
-  margin: 0;
-  text-align: right;
-}
-dt, dt + dd {
-  border-top: none solid white;
-  padding-top: 2px;
-  margin-top: 8px;
-}
-dt:first-child, dt:first-child + dd {
-  padding-top: 0;
-  margin-top: 0;
-}
-figure {
+
+.tile {
   margin: 0;
   position: relative;
 }
-figure:hover {
+.tile > a:hover {
   cursor: pointer;
 }
-figure:hover figcaption {
-  opacity: 1;
+.tile picture > img {
+  max-width: 100%;
+  width: 100%;
 }
-figcaption {
+.caption {
   background: rgba(0, 0, 0, 0.7);
   bottom: 0;
+  display: none;
   left: 0;
-  opacity: 0;
   padding: 10px;
   position: absolute;
   right: 0;
   top: 0;
   transition: all 0.4s ease;
 }
-figcaption table {
-  width: 100%;
+.caption:target {
+  display: block;
 }
-picture > img {
-  max-width: 100%;
-  width: 100%;
+
+h1, h2 {
+  text-align: center;
 }
