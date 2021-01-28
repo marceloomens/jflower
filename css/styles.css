@@ -97,6 +97,12 @@ strong {
 .small {
   font-size: 70%;
 }
+footer {
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  padding: 4px;
+  text-align: center;
+}
 @media (min-width: 600px) {
   main {
     grid-template-columns: calc(100vw / 2) calc(100vw / 2);
@@ -123,13 +129,9 @@ strong {
     display: none;
   }
   footer {
-    background-color: rgba(0,0,0,0.5);
     bottom: 0;
-    color: white;
     left: 0;
-    padding: 4px;
     position: fixed;
     right: 0;
-    text-align: center;
   }
 }
