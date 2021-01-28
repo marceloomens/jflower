@@ -109,15 +109,27 @@ strong {
     position: sticky;
     top: 0px;
   }
+  section#content {
+    padding-bottom: 28px;
+  }
   section#content > div {
     max-width: 400px;
     order: 1;
-    padding-bottom: 0;
   }
   p {
     margin-left: 2rem;
   }
   .mobile {
     display: none;
+  }
+  footer {
+    background-color: rgba(0,0,0,0.5);
+    bottom: 0;
+    color: white;
+    left: 0;
+    padding: 4px;
+    position: fixed;
+    right: 0;
+    text-align: center;
   }
 }
