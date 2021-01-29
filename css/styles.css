@@ -4,7 +4,7 @@ body {
   color: #FFF;
 }
 
-header {
+header, footer {
   text-align: center;
 }
 
@@ -63,10 +63,10 @@ section.mosaic {
   }
 }
 
-h1 {
+.font-primary, h1 {
   font-family: 'Alex Brush', cursive;
 }
 
-h2 {
+.font-secondary {
   font-family: 'Carter One', cursive;
 }
