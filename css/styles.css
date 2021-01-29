@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: repeat url("/img/swirl.png");
   background-color: rgb(241, 39, 124);
@@ -46,6 +50,8 @@ section.mosaic {
   background: rgba(0, 0, 0, 0.7);
   bottom: 0;
   display: none;
+  flex-direction: column;
+  justify-content: end;
   left: 0;
   padding: 10px;
   position: fixed;
@@ -54,13 +60,22 @@ section.mosaic {
   z-index: 1;
 }
 .caption:target {
-  display: block;
+  display: flex;
 }
 @media (min-width: 478px) {
   .caption {
     position: absolute;
     top: 0;
   }
+}
+
+.caption .target-dismiss {
+  color: white;
+  display: block;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .font-primary, h1 {
