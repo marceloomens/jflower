@@ -3,19 +3,19 @@
 </script>
 
 <style>
-.tile {
+article {
   margin: 0;
   position: relative;
 }
-.tile > a:hover {
+article > a:hover {
   cursor: pointer;
 }
-.tile picture > img {
+article picture > img {
   max-width: 100%;
   width: 100%;
 }
 
-.caption {
+aside {
   background: rgba(0, 0, 0, 0.7);
   bottom: 0;
   display: none;
@@ -28,16 +28,16 @@
   top: 25vh;
   z-index: 1;
 }
-.caption:target {
+aside:target {
   display: flex;
 }
 @media (min-width: 478px) {
-  .caption {
+  aside {
     position: absolute;
     top: 0;
   }
 }
-.caption .target-dismiss {
+aside a.target-dismiss {
   color: white;
   display: block;
   padding: 10px;
@@ -47,7 +47,7 @@
 }
 </style>
 
-<div class="tile">
+<article>
 <a href="#{anchor}">
   <picture>
     <source srcset="//j-flower-cake.imgix.net/{image}?fm=webp&q=25" type="image/webp" media="(min-width: 1600px)">
@@ -58,9 +58,9 @@
     <img src="//j-flower-cake.imgix.net/{image}?auto=format&q=25&w=1280&fit=crop" sizes="35vw" alt="{alt}">
   </picture>
 </a>
-<div id="{anchor}" class="caption">
+<aside id="{anchor}" class="caption">
   <a href="#/" class="target-dismiss">Close</a>
-  <h2 class="font-secondary">A delicious J Flower Cake 1</h2>
+  <h2 class="display-font-secondary">A delicious J Flower Cake 1</h2>
   <p>Made from fresh ingredients and original western and Asian flower cake recipes and designs.</p>
-</div>
-</div>
+</aside>
+</article>

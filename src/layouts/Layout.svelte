@@ -13,12 +13,6 @@
   margin-left: 0;
   margin-right: 0;
 }
-:global(.font-primary,h1) {
-font-family: 'Alex Brush', cursive;
-}
-:global(.font-secondary) {
-font-family: 'Carter One', cursive;
-}
 header, footer {
   text-align: center;
 }
@@ -26,14 +20,14 @@ header, footer {
 
 <svelte:head>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/framework.css" />
   <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Carter+One&display=swap" rel="stylesheet">
   <title>J Flower Cake — Buttercream and Korean Bean Paste Flowers</title>
   <meta name="description" content="J Flower Cake — Buttercream and Korean Bean Paste Flowers">
 </svelte:head>
 
 <header>
-  <h1>J Flower Cake</h1>
+  <h1 class="display-font-primary">J Flower Cake</h1>
 </header>
 
 <main>
@@ -42,7 +36,7 @@ header, footer {
 
 <footer>
   <address>
-    <span class="font-primary">J Flower Cake</span><br />
+    <span class="display-font-primary">J Flower Cake</span><br />
     Middenmolenlaan 8<br />
     2807 DL Gouda
   </address>
