@@ -1,62 +1,19 @@
-# Elder.js Template Project
+# J Flower Cake
 
-<img src="https://img.shields.io/badge/dynamic/json?color=brightgreen&label=Node&query=engines.node&url=https%3A%2F%2Fraw.githubusercontent.com%2Felderjs%2Ftemplate%2Fmaster%2Fpackage.json" alt="node version" />
+## License
 
-This is a project template for [Elder.js](https://elderguide.com/tech/elderjs/) apps. The template lives at https://github.com/elderjs/template and the Elder.js source is here: https://github.com/elderjs/elderjs
+J Flower Cake - Korean Bean Paste and Buttercream Flower Cakes
+Copyright (C) 2021  J Flower Cake
 
-Here is a demo of the template: [https://elderjs.netlify.app/](https://elderjs.netlify.app/)
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 
-## Get started
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
 
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
-
-```bash
-npx degit Elderjs/template elderjs-app
-cd elderjs-app
-```
-
-### Install the dependencies:
-
-```bash
-npm install # or just yarn
-```
-
-### Start Project:
-
-```bash
-npm start
-```
-
-Navigate to [localhost:3000](http://localhost:3000). You should see your app running.
-
-### Development:
-
-For development, we recommend running two separate terminals. One for the server and the other for rollup.
-
-**Terminal 1**
-
-```bash
-npm run dev:server # `npm start` above starts a server, but doesn't rebuild your Svelte components on change.
-```
-
-**Terminal 2**
-
-```bash
-npm run dev:rollup # This rebuilds your svelte components on change.
-```
-
-Once you have these two terminals open, edit a component file in `src`, save it, and reload the page to see your changes.
-
-### To Build HTML:
-
-```bash
-npm run build
-```
-
-This will build all of your html into the /public/ folder.
-
-### What to Expect
-
-- Nodemon is watching your files for changes. It will restart when it needs to.
-- Rollup is watching your files for changes. It will restart when it needs to.
-- If your `elder.config.js` has `@elderjs/plugin-browser-reload': {}` in it's plugins, your browser will automatically restart after the server restarts.
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.

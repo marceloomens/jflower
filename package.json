@@ -1,7 +1,7 @@
 {
-  "name": "elderjs-template",
-  "version": "1.2.0",
-  "description": "This is a project template for [Elder.js](https://elderguide.com/tech/elderjs/) apps. The template lives at https://github.com/elderjs/template and the Elder.js source is here: https://github.com/elderjs/elderjs",
+  "name": "jflower-cake",
+  "version": "1.0.0",
+  "description": "J Flower Cake – Korean Bean Paste and Buttercream Flower Cakes from Gouda, the Netherlands",
   "main": "./src/build.js",
   "scripts": {
     "start": "npm run build:rollup && npm run dev:tailwind && npm run dev:server",
@@ -55,15 +55,15 @@
     "prettier-plugin-svelte": "^1.2.1",
     "rollup": "^2.21.0"
   },
-  "author": "Nick Reese",
-  "license": "MIT",
+  "author": "Marcel Oomens",
+  "license": "GPLv3",
   "files": [
     "index.js",
     "elderjs"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Elderjs/template.git"
+    "url": "git+https://github.com/marceloomens/kongpao.git"
   },
   "keywords": [
     "svelte",
@@ -79,7 +79,7 @@
     "hydration"
   ],
   "bugs": {
-    "url": "https://github.com/Elderjs/template/issues"
+    "url": "https://github.com/marceloomens/kongpao/issues"
   },
-  "homepage": "https://github.com/Elderjs/template#readme"
+  "homepage": "https://www.jflower.nl"
 }
