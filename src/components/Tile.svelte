@@ -3,51 +3,15 @@
 </script>
 
 <style>
-article {
-  margin: 0;
-  position: relative;
-}
-article > a:hover {
-  cursor: pointer;
-}
-article picture > img {
-  max-width: 100%;
-  width: 100%;
-}
-
 aside {
-  background: rgba(0, 0, 0, 0.7);
-  bottom: 0;
   display: none;
-  flex-direction: column;
-  justify-content: end;
-  left: 0;
-  padding: 10px;
-  position: fixed;
-  right: 0;
-  top: 25vh;
-  z-index: 1;
 }
 aside:target {
   display: flex;
 }
-@media (min-width: 478px) {
-  aside {
-    position: absolute;
-    top: 0;
-  }
-}
-aside a.target-dismiss {
-  color: white;
-  display: block;
-  padding: 10px;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
 </style>
 
-<article>
+<article class="relative">
 <a href="#{anchor}">
   <picture>
     <source srcset="//j-flower-cake.imgix.net/{image}?fm=webp&q=25" type="image/webp" media="(min-width: 1600px)">
@@ -58,8 +22,8 @@ aside a.target-dismiss {
     <img src="//j-flower-cake.imgix.net/{image}?auto=format&q=25&w=1280&fit=crop" sizes="35vw" alt="{alt}">
   </picture>
 </a>
-<aside id="{anchor}" class="caption">
-  <a href="#/" class="target-dismiss">Close</a>
+<aside id="{anchor}" class="fixed inset-0 top-1/4 sm:absolute sm:top-0 z-10 p-3 flex-col justify-end bg-black bg-opacity-75">
+  <a href="#/" class="target-dismiss absolute block top-0 right-0 p-3">Close</a>
   <h2 class="font-display">A delicious J Flower Cake 1</h2>
   <p>Made from fresh ingredients and original western and Asian flower cake recipes and designs.</p>
 </aside>
