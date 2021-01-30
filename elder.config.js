@@ -1,5 +1,5 @@
 module.exports = {
-  origin: '', // TODO: update this.
+  origin: 'www.jflower.nl',
   lang: 'en',
   srcDir: 'src',
   distDir: 'public',
