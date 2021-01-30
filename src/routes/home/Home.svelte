@@ -4,26 +4,22 @@
 
 <style>
 section {
-  --tile-count: 2;
+  --tile-gap: 2px;
   --tile-dimension: calc((100vw - 6px) / 2);
-  box-sizing: border-box;
-  display: grid;
-  gap: 2px;
+  gap: var(--tile-gap);
   grid-auto-rows: var(--tile-dimension);
-  grid-template-columns: repeat(var(--tile-count), var(--tile-dimension));
-  max-width: 100vw;
-  padding: 2px;
-  width: 100vw;
+  grid-template-columns: repeat(2, var(--tile-dimension));
+  padding: var(--tile-gap);
 }
-@media (min-width: 720px) {
+@media (min-width: 768px) {
   section {
-    --tile-count: 3;
     --tile-dimension: calc((100vw - 8px) / 3);
+    grid-template-columns: repeat(3, var(--tile-dimension));
   }
 }
 </style>
 
-<section>
+<section class="grid">
   <Tile anchor={"pecan"} image={"mosaic-1.JPG"} alt={"Pecan cake"} />
   <Tile anchor={"passion"} image={"mosaic-1.JPG"} alt={"Passion cake"} />
   <Tile anchor={"new-year"} image={"mosaic-1.JPG"} alt={"New Year's cake"}/ />
