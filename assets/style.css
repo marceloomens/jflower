@@ -6,15 +6,14 @@ body {
   background: repeat url("/img/swirl.png");
   background-color: rgb(241, 39, 124);
   color: #FFF;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 header, footer {
   text-align: center;
 }
 
-section.full {
-  margin: -8px;
-}
 section.mosaic {
   --element-count: 2;
   --element-dimension: calc((100vw - 6px) / 2);
