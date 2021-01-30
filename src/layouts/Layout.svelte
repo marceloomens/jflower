@@ -18,30 +18,29 @@
 <svelte:head>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="/framework.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Carter+One&display=swap" rel="stylesheet">
   <title>J Flower Cake — Buttercream and Korean Bean Paste Flowers</title>
   <meta name="description" content="J Flower Cake — Buttercream and Korean Bean Paste Flowers">
 </svelte:head>
 
-<header class="text-center">
-  <h1 class="display-font-primary">J Flower Cake</h1>
+<header class="text-center mt-4">
+  <h1 class="font-cursive text-6xl">J Flower Cake</h1>
 </header>
 
 <main>
   {@html templateHtml}
 </main>
 
-<footer class="text-center">
-  <address>
-    <span class="display-font-primary">J Flower Cake</span><br />
-    Middenmolenlaan 8<br />
+<footer class="text-center mt-4">
+  <address class="text-sm">
+    <span class="font-cursive text-3xl">J Flower Cake</span><br />
+    Middenmolenlaan 9<br />
     2807 DL Gouda
   </address>
-  <dl>
-    <dt>KVK reg.</dt>
-    <dd>80458998</dd>
-    <dt>VAT no.</dt>
-    <dd>NL003445086B58</dd>
+  <small>&copy; J Flower cake, 2021</small>
+  <dl class="text-xs">
+    <dt class="inline px-2">KVK reg.</dt>
+    <dd class="inline">80458998</dd>
+    <dt class="inline px-2">VAT no.</dt>
+    <dd class="inline">NL003445086B58</dd>
   </dl>
-  <small>&copy; J Flower cake, 2021.</small>
 </footer>

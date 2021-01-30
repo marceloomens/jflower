@@ -60,7 +60,7 @@ aside a.target-dismiss {
 </a>
 <aside id="{anchor}" class="caption">
   <a href="#/" class="target-dismiss">Close</a>
-  <h2 class="display-font-secondary">A delicious J Flower Cake 1</h2>
+  <h2 class="font-display">A delicious J Flower Cake 1</h2>
   <p>Made from fresh ingredients and original western and Asian flower cake recipes and designs.</p>
 </aside>
 </article>
