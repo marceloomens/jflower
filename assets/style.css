@@ -12,9 +12,6 @@ header, footer {
   text-align: center;
 }
 
-section.full {
-  margin: -8px;
-}
 section.mosaic {
   --element-count: 2;
   --element-dimension: calc((100vw - 6px) / 2);
@@ -23,6 +20,7 @@ section.mosaic {
   gap: 2px;
   grid-auto-rows: var(--element-dimension);
   grid-template-columns: repeat(var(--element-count), var(--element-dimension));
+  margin-left: -8px;
   max-width: 100vw;
   padding: 2px;
   width: 100vw;
