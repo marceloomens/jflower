@@ -23,7 +23,7 @@
 </svelte:head>
 
 <header class="text-center mt-4">
-  <h1 class="font-cursive text-6xl">J Flower Cake</h1>
+  <h1 class="font-cursive text-4xl sm:text-6xl">J Flower Cake</h1>
 </header>
 
 <main>
