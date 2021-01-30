@@ -8,17 +8,17 @@ module.exports = {
       {
         name: 'Mango cheese cake',
         description: 'A delicious, 4-layer Japanese cheese cake with chiffon, mango pudding, mango jelly and cheese cake',
-        image: 'fallback.png',
+        image: 'fallback.jpg',
       },
       {
         name: 'Basque cheese cake',
         description: 'Based on a traditional Basque recipe, this ugly brother of the mango cheese cake is no less delicious',
-        image: 'fallback.png',
+        image: 'fallback.jpg',
       },
       {
         name: 'Pecan cake',
         description: 'Traditional American pecan pie, with a nutty based covered in fruits, nuts and cream',
-        image: 'fallback.png',
+        image: 'fallback.jpg',
       }
     ]
     return data
