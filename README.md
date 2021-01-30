@@ -1,5 +1,7 @@
 # J Flower Cake
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cd06e8d9-8b72-4298-a97c-fb7519ef9123/deploy-status)](https://app.netlify.com/sites/jflower/deploys)
+
 ## License
 
 J Flower Cake - Korean Bean Paste and Buttercream Flower Cakes
