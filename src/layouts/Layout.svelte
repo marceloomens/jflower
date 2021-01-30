@@ -13,9 +13,6 @@
   margin-left: 0;
   margin-right: 0;
 }
-header, footer {
-  text-align: center;
-}
 </style>
 
 <svelte:head>
@@ -26,7 +23,7 @@ header, footer {
   <meta name="description" content="J Flower Cake — Buttercream and Korean Bean Paste Flowers">
 </svelte:head>
 
-<header>
+<header class="text-center">
   <h1 class="display-font-primary">J Flower Cake</h1>
 </header>
 
@@ -34,7 +31,7 @@ header, footer {
   {@html templateHtml}
 </main>
 
-<footer>
+<footer class="text-center">
   <address>
     <span class="display-font-primary">J Flower Cake</span><br />
     Middenmolenlaan 8<br />
