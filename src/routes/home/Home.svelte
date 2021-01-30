@@ -1,5 +1,7 @@
 <script>
   import Tile from '../../components/Tile.svelte';
+
+  export let data;
 </script>
 
 <style>
@@ -20,7 +22,9 @@ section {
 </style>
 
 <section class="grid">
-  <Tile id={1} />
-  <Tile id={2} />
-  <Tile id={3} />
+{#if data.cakes}
+  {#each data.cakes as cake, i}
+  <Tile id={i} {...cake} />
+  {/each}
+{/if}
 </section>
