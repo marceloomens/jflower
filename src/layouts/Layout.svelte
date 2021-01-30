@@ -3,8 +3,8 @@
 </script>
 
 <svelte:head>
-  <link rel="stylesheet" href="/style.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Carter+One&display=swap" rel="stylesheet">
   <title>J Flower Cake — Buttercream and Korean Bean Paste Flowers</title>
   <meta name="description" content="J Flower Cake — Buttercream and Korean Bean Paste Flowers">
