@@ -2,6 +2,28 @@
   export let templateHtml, settings;
 </script>
 
+<style>
+:global(html) {
+  scroll-behavior: smooth;
+}
+:global(body) {
+  background: repeat url("/img/swirl.png");
+  background-color: rgb(241, 39, 124);
+  color: #FFF;
+  margin-left: 0;
+  margin-right: 0;
+}
+:global(.font-primary,h1) {
+font-family: 'Alex Brush', cursive;
+}
+:global(.font-secondary) {
+font-family: 'Carter One', cursive;
+}
+header, footer {
+  text-align: center;
+}
+</style>
+
 <svelte:head>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="/style.css" />

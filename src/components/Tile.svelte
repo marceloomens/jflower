@@ -2,6 +2,51 @@
   export let anchor, image, alt;
 </script>
 
+<style>
+.tile {
+  margin: 0;
+  position: relative;
+}
+.tile > a:hover {
+  cursor: pointer;
+}
+.tile picture > img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.caption {
+  background: rgba(0, 0, 0, 0.7);
+  bottom: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: end;
+  left: 0;
+  padding: 10px;
+  position: fixed;
+  right: 0;
+  top: 25vh;
+  z-index: 1;
+}
+.caption:target {
+  display: flex;
+}
+@media (min-width: 478px) {
+  .caption {
+    position: absolute;
+    top: 0;
+  }
+}
+.caption .target-dismiss {
+  color: white;
+  display: block;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+</style>
+
 <div class="tile">
 <a href="#{anchor}">
   <picture>
