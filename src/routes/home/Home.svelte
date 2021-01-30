@@ -20,7 +20,7 @@ section {
 </style>
 
 <section class="grid">
-  <Tile anchor={"pecan"} image={"mosaic-1.JPG"} alt={"Pecan cake"} />
-  <Tile anchor={"passion"} image={"mosaic-1.JPG"} alt={"Passion cake"} />
-  <Tile anchor={"new-year"} image={"mosaic-1.JPG"} alt={"New Year's cake"}/ />
+  <Tile id={1} />
+  <Tile id={2} />
+  <Tile id={3} />
 </section>
