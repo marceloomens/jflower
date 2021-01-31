@@ -8,7 +8,7 @@
 }
 :global(body) {
   background: repeat url("/img/swirl.png");
-  background-color: rgb(241, 39, 124);
+  background-color: #F9A8D4;
   color: #FFF;
   margin-left: 0;
   margin-right: 0;
