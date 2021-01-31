@@ -6,19 +6,19 @@ module.exports = {
   data: ({ data }) => {
     data.cakes = [
       {
-        name: 'Mango cheese cake',
-        description: 'A delicious, 4-layer Japanese cheese cake with chiffon, mango pudding, mango jelly and cheese cake',
-        image: 'fallback.jpg',
+        name: 'Year of the Ox Cake（新春蛋糕）',
+        description: 'A very special 2021 Year of the Ox delicacy, with chiffon, sesame cream, rice wine and raspberry jelly',
+        image: 'spring.jpg',
       },
       {
-        name: 'Basque cheese cake',
-        description: 'Based on a traditional Basque recipe, this ugly brother of the mango cheese cake is no less delicious',
-        image: 'fallback.jpg',
+        name: 'New Year Passion',
+        description: 'New year specialty passion fruit cheese cake with chiffon, cream cheese, and passion fruit two ways',
+        image: 'passion.jpg',
       },
       {
-        name: 'Pecan cake',
-        description: 'Traditional American pecan pie, with a nutty based covered in fruits, nuts and cream',
-        image: 'fallback.jpg',
+        name: 'Christmas log cake',
+        description: 'Traditional Christmas log cake decorated with tropical and forest fruits, chocolate and christmas decorations',
+        image: 'christmas.jpg',
       }
     ]
     return data
