@@ -7,11 +7,13 @@
   scroll-behavior: smooth;
 }
 :global(body) {
-  background: repeat url("/img/swirl.png");
   background-color: #F9A8D4;
   color: #FFF;
+  display: flex;
+  flex-direction: column;
   margin-left: 0;
   margin-right: 0;
+  min-height: 100vh;
 }
 </style>
 
@@ -22,15 +24,17 @@
   <meta name="description" content="J Flower Cake — Buttercream and Korean Bean Paste Flowers">
 </svelte:head>
 
-<header class="text-center mt-4">
+<header class="pt-4 text-center bg-gradient-to-b from-pink-600">
   <h1 class="font-cursive text-4xl sm:text-6xl">J Flower Cake</h1>
+  <p class="font-serif"><i>Delicious cakes, desert and snacks, made with love using locally-sourced ingredients and traditional Asian and Western recipes.</i></p>
+  <h2 class="font-display text-xl mt-4">Cake Menu</h2>
 </header>
 
-<main>
+<main class="flex-grow">
   {@html templateHtml}
 </main>
 
-<footer class="text-center mt-4">
+<footer class="text-center py-4 bg-gradient-to-t from-pink-600">
   <address class="text-sm">
     <span class="font-cursive text-3xl">J Flower Cake</span><br />
     Middenmolenlaan 9<br />
