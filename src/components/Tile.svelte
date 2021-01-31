@@ -3,6 +3,8 @@
   export let name = 'J Flower Cake';
   export let description = 'A delicious J Flower Cake made from fresh ingredients and original Asian flower cake recipes and designs.';
   export let image = 'fallback.png';
+
+  let wamsg = encodeURIComponent(`I would like to order a ${name}. (from website)`);
 </script>
 
 <style>
@@ -46,8 +48,8 @@ aside:target {
     </figure>
   </div>
   <p>{description}</p>
-  <a href="#/" class="w-1/2 max-w-xs self-end sm:self-center mt-2">
-    <button class="w-full border-2 border-white font-display text-white hover:bg-white hover:border-pink-600 hover:text-pink-600 py-2 px-3 rounded-md">Order now</button>
+  <a href="https://wa.me/31611134040?text={wamsg}" target="_blank" class="w-1/2 max-w-xs self-center mt-2">
+    <button class="w-full border-2 border-white font-display text-white focus:bg-white active:bg-white hover:bg-white focus:border-pink-600 active:border-pink-600 hover:border-pink-600 focus:text-pink-600 active:text-pink-600 hover:text-pink-600 py-2 px-3 rounded-md">Order now</button>
   </a>
 </aside>
 </article>

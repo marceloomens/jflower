@@ -6,17 +6,17 @@ module.exports = {
   data: ({ data }) => {
     data.cakes = [
       {
-        name: 'Year of the Ox Cake（新春蛋糕）',
+        name: '2021 Year of the Ox cake（新春蛋糕）',
         description: 'A very special 2021 Year of the Ox delicacy, with chiffon, sesame cream, rice wine and raspberry jelly',
         image: 'spring.jpg',
       },
       {
-        name: 'New Year Passion',
+        name: '2021 New Year Passion cake',
         description: 'New year specialty passion fruit cheese cake with chiffon, cream cheese, and passion fruit two ways',
         image: 'passion.jpg',
       },
       {
-        name: 'Christmas log cake',
+        name: '2020 Christmas log cake',
         description: 'Traditional Christmas log cake decorated with tropical and forest fruits, chocolate and christmas decorations',
         image: 'christmas.jpg',
       }
