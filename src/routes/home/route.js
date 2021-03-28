@@ -5,21 +5,36 @@ module.exports = {
   permalink: ({ request }) => request.slug,
   data: ({ data }) => {
     data.cakes = [
-      {
-        name: '2021 Year of the Ox cake（新春蛋糕）',
-        description: 'A very special 2021 Year of the Ox delicacy, with chiffon, sesame cream, rice wine and raspberry jelly',
-        image: 'spring.jpg',
-      },
+      // {
+      //   name: '2021 Year of the Ox cake（新春蛋糕）',
+      //   description: 'A very special 2021 Year of the Ox delicacy, with chiffon, sesame cream, rice wine and raspberry jelly',
+      //   image: 'spring.jpg',
+      // },
+      // {
+      //   name: '2020 Christmas log cake',
+      //   description: 'Traditional Christmas log cake decorated with tropical and forest fruits, chocolate and christmas decorations',
+      //   image: 'christmas.jpg',
+      // },
       {
         name: '2021 New Year Passion cake',
         description: 'New year specialty passion fruit cheese cake with chiffon, cream cheese, and passion fruit two ways',
         image: 'passion.jpg',
       },
       {
-        name: '2020 Christmas log cake',
-        description: 'Traditional Christmas log cake decorated with tropical and forest fruits, chocolate and christmas decorations',
-        image: 'christmas.jpg',
-      }
+        name: 'Taro lava cake',
+        decription: '',
+        image: 'tarolava.jpg'
+      },
+      {
+        name: 'Black sesame and soy bean pudding',
+        decription: '',
+        image: 'sesamesoy.jpg'
+      },
+      {
+        name: 'Oreolis',
+        decription: '',
+        image: 'oreo.jpg'
+      },
     ]
     return data
   },
