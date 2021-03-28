@@ -21,12 +21,12 @@ module.exports = {
         image: 'passion.jpg',
       },
       {
-        name: 'Taro lava cake',
+        name: 'Taro Lava cake',
         decription: '',
         image: 'tarolava.jpg'
       },
       {
-        name: 'Black sesame and soy bean pudding',
+        name: 'Black Sesame & Soy Bean pudding',
         decription: '',
         image: 'sesamesoy.jpg'
       },

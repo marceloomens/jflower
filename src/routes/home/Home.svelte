@@ -6,8 +6,8 @@
 
 <style>
 section {
-  --tile-gap: 2px;
-  --tile-dimension: calc((100vw - 6px) / 2);
+  --tile-gap: 10px;
+  --tile-dimension: calc((100vw - 30px) / 2);
   gap: var(--tile-gap);
   grid-auto-rows: var(--tile-dimension);
   grid-template-columns: repeat(2, var(--tile-dimension));
@@ -15,7 +15,7 @@ section {
 }
 @media (min-width: 768px) {
   section {
-    --tile-dimension: calc((100vw - 8px) / 3);
+    --tile-dimension: calc((100vw - 40px) / 3);
     grid-template-columns: repeat(3, var(--tile-dimension));
   }
 }
