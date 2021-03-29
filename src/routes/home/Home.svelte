@@ -6,17 +6,14 @@
 
 <style>
 section {
-  --tile-gap: 10px;
-  --tile-dimension: calc((100vw - 30px) / 2);
+  --tile-gap: 0.7rem;
   gap: var(--tile-gap);
-  grid-auto-rows: var(--tile-dimension);
-  grid-template-columns: repeat(2, var(--tile-dimension));
+  grid-template-columns: 1fr 1fr;
   padding: var(--tile-gap);
 }
 @media (min-width: 768px) {
   section {
-    --tile-dimension: calc((100vw - 40px) / 3);
-    grid-template-columns: repeat(3, var(--tile-dimension));
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 </style>
