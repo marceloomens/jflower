@@ -9,6 +9,7 @@ public_folder: "/img"
 collections:
   - name: product
     label: Product
+    identifier_field: name
     folder: products
     create: true
     slug: "{{slug}}"
