@@ -9,7 +9,7 @@ collections:
   - name: product
     label: Product
     identifier_field: name
-    folder: products
+    folder: "src/routes/products"
     create: true
     slug: "{{slug}}"
     fields:
