@@ -22,7 +22,7 @@ collections:
     extension: md
     format: yaml-frontmatter
     # frontmatter_delimiter:
-    slug: {{slug}}
+    slug: "{{slug}}"
     preview_path: /
     # preview_path_date_field: see detailed description below
     fields:
