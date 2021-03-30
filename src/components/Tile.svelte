@@ -32,7 +32,7 @@ aside:target {
   </figure>
 </a>
 <aside id="tile-{id}" class="fixed inset-0 top-1/4 sm:top-0 sm:left-1/2 z-10 flex-col justify-end p-3 bg-black bg-opacity-90 text-center">
-  <a href="#/" class="target-dismiss absolute block top-0 right-0 p-3 text-xl">&#x2715;</a>
+  <a href="#/" class="absolute block top-0 right-0 p-3 text-xl">&#x2715;</a>
   <h2 class="font-display text-2xl">{name}</h2>
   <div class="overflow-hidden w-full self-center m-4">
     <figure class="h-full">

@@ -18,6 +18,7 @@ section {
 }
 </style>
 
+<h2 class="font-display text-center text-xl">Cake Menu</h2>
 <section class="grid">
 {#if data.cakes}
   {#each data.cakes as cake, i}
