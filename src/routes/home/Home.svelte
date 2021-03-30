@@ -18,11 +18,8 @@ section {
 }
 </style>
 
-<h2 class="font-display text-center text-xl">Cake Menu</h2>
 <section class="grid">
-{#if data.cakes}
-  {#each data.cakes as cake, i}
-  <Tile id={i} {...cake} />
-  {/each}
-{/if}
+{#each data.markdown.products as product, i}
+  <Tile id={i} {...product.frontmatter} />
+{/each}
 </section>
