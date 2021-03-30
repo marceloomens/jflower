@@ -19,7 +19,7 @@
 
 <svelte:head>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="stylesheet" href="/framework.css" />
+  <link rel="stylesheet" href="/style.css" />
   <title>J Flower Cake — Buttercream and Korean Bean Paste Flowers</title>
   <meta name="description" content="J Flower Cake — Buttercream and Korean Bean Paste Flowers">
 </svelte:head>
