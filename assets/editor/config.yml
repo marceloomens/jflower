@@ -1,19 +1,36 @@
 backend:
   name: github
-  repo: "marceloomens/kongpao"
+  repo: marceloomens/kongpao
   branch: master
-  cms_label_prefix: "draft/"
 publish_mode: editorial_workflow
-media_folder: "assets/img"
-public_folder: "/img"
+media_folder: assets/img
+public_folder: /img
+site_url: https://jflower.nl
+logo_url: https://jflower.nl/img/logo.png
 collections:
   - name: product
-    label: Product
     identifier_field: name
-    folder: products
+    label: Products
+    label_singular: Product
+    description: All your delicious J Flower cakes, snacks, and other products
+    folder: src/routes/products
+    # filter: optional filter for folder collections; details in Collection Types
     create: true
-    slug: "{{slug}}"
+    publish: false
+    hide: false
+    delete: true
+    extension: md
+    format: yaml-frontmatter
+    # frontmatter_delimiter:
+    slug: {{slug}}
+    preview_path: /
+    # preview_path_date_field: see detailed description below
     fields:
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
-      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Image", name: "image", widget: "image", allow_multiple: false}
+    # editor: see detailed description below
+    # summary: see detailed description below
+    # sortable_fields: see detailed description below
+    # view_filters: see detailed description below
+    # view_groups: see detailed description below
