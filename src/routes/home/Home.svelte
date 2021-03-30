@@ -18,7 +18,6 @@ section {
 }
 </style>
 
-<h2 class="font-display text-center text-xl">Cake Menu</h2>
 <section class="grid">
 {#each data.markdown.products as product, i}
   <Tile id={i} {...product.frontmatter} />
