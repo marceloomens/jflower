@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: "marceloomens/kongpao"
+  branch: master
+  cms_label_prefix: "draft/"
+publish_mode: editorial_workflow
+media_folder: "assets/img"
+public_folder: "/img"
+collections:
+  - name: product
+    label: Product
+    identifier_field: name
+    folder: products
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
