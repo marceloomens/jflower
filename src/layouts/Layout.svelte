@@ -24,10 +24,9 @@
   <meta name="description" content="J Flower Cake — Buttercream and Korean Bean Paste Flowers">
 </svelte:head>
 
-<header class="px-2 pt-4 text-center bg-gradient-to-b from-green-900">
+<header class="px-2 py-4 text-center bg-gradient-to-b from-green-900">
   <h1 class="font-cursive text-4xl sm:text-6xl">J Flower Cake</h1>
   <p class="font-serif"><i>Delicious cakes, desert and snacks, made with love using locally-sourced ingredients and traditional Asian and Western recipes.</i></p>
-  <h2 class="font-display text-xl mt-4">Cake Menu</h2>
 </header>
 
 <main class="flex-grow">
