@@ -2,7 +2,6 @@ backend:
   name: github
   repo: "marceloomens/kongpao"
   branch: master
-  cms_label_prefix: "draft/"
 publish_mode: editorial_workflow
 media_folder: "assets/img"
 public_folder: "/img"
