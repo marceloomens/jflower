@@ -34,7 +34,7 @@ aside:target {
 <aside id="tile-{id}" class="fixed inset-0 top-1/4 sm:top-0 sm:left-1/2 z-10 flex-col justify-end p-3 bg-black bg-opacity-90 text-center">
   <a href="#/" class="absolute block top-0 right-0 p-3 text-xl">&#x2715;</a>
   <h2 class="font-display text-2xl">{name}</h2>
-  <div class="overflow-hidden w-full self-center m-4">
+  <div class="overflow-hidden">
     <figure class="h-full">
       <picture>
         <source srcset="//j-flower-cake.imgix.net/{image}?fm=webp&q=25&w=1600&ar=4:3&fit=crop&border=1,C0000000&border-radius=10,10,10,10" type="image/webp" media="(min-width: 1281px)">
@@ -43,7 +43,7 @@ aside:target {
         <source srcset="//j-flower-cake.imgix.net/{image}?fm=webp&q=25&w=768&ar=4:3&fit=crop&border=1,C0000000&border-radius=10,10,10,10" type="image/webp" media="(max-width: 768px)">
         <source srcset="//j-flower-cake.imgix.net/{image}?fm=webp&q=25&w=640&ar=4:3&fit=crop&border=1,C0000000&border-radius=10,10,10,10" type="image/webp" media="(max-width: 640px)">
         <source srcset="//j-flower-cake.imgix.net/{image}?fm=webp&q=25&w=320&ar=4:3&fit=crop&border=1,C0000000&border-radius=10,10,10,10" type="image/webp" media="(max-width: 320px)">
-        <img class="object-contain" src="//j-flower-cake.imgix.net/{image}?auto=format&q=25&w=768&ar=4:3&fit=crop&border=1,C0000000&border-radius=10,10,10,10" sizes="(max-width: 640px) 50vw, 17vw" alt="{name}">
+        <img class="object-contain w-full h-full" src="//j-flower-cake.imgix.net/{image}?auto=format&q=25&w=768&ar=4:3&fit=crop&border=1,C0000000&border-radius=10,10,10,10" sizes="(max-width: 640px) 50vw, 17vw" alt="{name}">
       </picture>
     </figure>
   </div>
