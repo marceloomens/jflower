@@ -48,7 +48,7 @@ aside:target {
     </figure>
   </div>
   <p>{description}</p>
-  <a href="https://wa.me/31611134040?text={wamsg}" target="_blank" class="w-1/2 max-w-xs self-center mt-2">
+  <a href="https://wa.me/31611134040?text={wamsg}" target="_blank" class="w-1/2 max-w-xs self-center mt-2" rel="external nofollow noopener noreferrer">
     <button class="w-full border-2 border-white font-display text-white focus:bg-white active:bg-white hover:bg-white focus:border-yellow-600 active:border-yellow-600 hover:border-yellow-600 focus:text-yellow-600 active:text-yellow-600 hover:text-yellow-600 py-2 px-3 rounded-md">Order now</button>
   </a>
 </aside>
