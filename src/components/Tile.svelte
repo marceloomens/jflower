@@ -5,7 +5,11 @@
   export let image;
 
   if (image) {
-    image = image.match(/\/([^/]*)(?:\.\w+)$/)[1];
+    image = image
+      // Remove Cloudinary base url
+      .replace(/^https:\/\/res.cloudinary.com\/jflower\/image\/upload\//, '')
+      // Remove file extension
+      .replace(/\.\w{3}$/,'');
   }
   if (!image) {
     image = 'fallback';
