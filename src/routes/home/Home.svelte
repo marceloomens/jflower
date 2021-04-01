@@ -8,17 +8,22 @@
 section {
   --tile-gap: 0.7rem;
   gap: var(--tile-gap);
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, auto);
   padding: var(--tile-gap);
 }
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   section {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, auto);
+  }
+}
+@media (min-width: 1024px) {
+  section {
+    grid-template-columns: repeat(4, minmax(auto, 320px));
   }
 }
 </style>
 
-<section class="grid">
+<section class="grid justify-center">
 {#each data.markdown.products as product, i}
   <Tile id={i} {...product.frontmatter} />
 {/each}

@@ -5,6 +5,17 @@ backend:
 publish_mode: editorial_workflow
 media_folder: assets/img
 public_folder: ""
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: jflower
+    api_key: 567231485354962
+    output_filename_only: true
+    # use_transformations
+    # user_secure_url
+    # default_trnsformations
+    # max_files
+    multiple: false
 site_url: https://jflower.nl
 logo_url: https://jflower.nl/img/logo.png
 collections:
