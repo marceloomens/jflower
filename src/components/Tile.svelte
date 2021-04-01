@@ -2,7 +2,7 @@
   export let id;
   export let name = 'J Flower Cake';
   export let description = 'A delicious J Flower Cake made from fresh ingredients and original Asian flower cake recipes and designs.';
-  export let image = 'fallback.png';
+  export let image = 'fallback';
 
   let wamsg = encodeURIComponent(`I would like to order a ${name}. (from website)`);
 </script>
