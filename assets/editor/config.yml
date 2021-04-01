@@ -29,6 +29,8 @@ collections:
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Image", name: "image", widget: "image", allow_multiple: false}
+      - {label: "Promoted", name: "promoted", widget: "boolean", default: true, hint: "Promoted products are displayed on the home page."}
+      - {label: "On sale", name: "sold", widget: "boolean", default: true, hint: "Products on sale can be ordered. Products not on sale cannot."}
     editor:
       preview: false
     # summary: see detailed description below

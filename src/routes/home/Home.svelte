@@ -20,6 +20,8 @@ section {
 
 <section class="grid">
 {#each data.markdown.products as product, i}
+{#if product.frontmatter.promoted}
   <Tile id={i} {...product.frontmatter} />
+{/if}
 {/each}
 </section>
