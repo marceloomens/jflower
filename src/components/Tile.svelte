@@ -22,7 +22,7 @@ aside:target {
     <picture>
       <source media="(min-width: 320px)" type="image/webp" srcset="//res.cloudinary.com/jflower/image/upload/t_tile-320/{image}.webp, //res.cloudinary.com/jflower/image/upload/t_tile-640/{image}.webp 2x">
       <source type="image/webp" srcset="//res.cloudinary.com/jflower/image/upload/t_tile-160/{image}.webp, //res.cloudinary.com/jflower/image/upload/t_tile-320/{image}.webp 2x">
-      <img src="//res.cloudinary.com/jflower/image/upload/t_tile-320/{image}" sizes="(min-width: 1024px) 25vw, (min-width: 640px) 33vw, 50vw" alt="{name}">
+      <img src="//res.cloudinary.com/jflower/image/upload/t_tile-320/{image}.jpg" sizes="(min-width: 1024px) 25vw, (min-width: 640px) 33vw, 50vw" alt="{name}">
     </picture>
     <figcaption class="hidden">{name}</figcaption>
   </figure>
@@ -33,13 +33,9 @@ aside:target {
   <div class="overflow-hidden">
     <figure class="h-full">
       <picture>
-        <source srcset="//j-flower-cake.imgix.net/{image}?fm=webp&q=25&w=1600&ar=4:3&fit=crop&border=1,C0000000&border-radius=10,10,10,10" type="image/webp" media="(min-width: 1281px)">
-        <source srcset="//j-flower-cake.imgix.net/{image}?fm=webp&q=25&w=1280&ar=4:3&fit=crop&border=1,C0000000&border-radius=10,10,10,10" type="image/webp" media="(max-width: 1280px)">
-        <source srcset="//j-flower-cake.imgix.net/{image}?fm=webp&q=25&w=1024&ar=4:3&fit=crop&border=1,C0000000&border-radius=10,10,10,10" type="image/webp" media="(max-width: 1024px)">
-        <source srcset="//j-flower-cake.imgix.net/{image}?fm=webp&q=25&w=768&ar=4:3&fit=crop&border=1,C0000000&border-radius=10,10,10,10" type="image/webp" media="(max-width: 768px)">
-        <source srcset="//j-flower-cake.imgix.net/{image}?fm=webp&q=25&w=640&ar=4:3&fit=crop&border=1,C0000000&border-radius=10,10,10,10" type="image/webp" media="(max-width: 640px)">
-        <source srcset="//j-flower-cake.imgix.net/{image}?fm=webp&q=25&w=320&ar=4:3&fit=crop&border=1,C0000000&border-radius=10,10,10,10" type="image/webp" media="(max-width: 320px)">
-        <img class="object-contain w-full h-full" src="//j-flower-cake.imgix.net/{image}?auto=format&q=25&w=768&ar=4:3&fit=crop&border=1,C0000000&border-radius=10,10,10,10" sizes="(max-width: 640px) 50vw, 17vw" alt="{name}">
+        <source media="(min-width: 320px)" type="image/webp" srcset="//res.cloudinary.com/jflower/image/upload/t_landscape-640/{image}.webp, //res.cloudinary.com/jflower/image/upload/t_landscape-1280/{image}.webp 2x">
+        <source type="image/webp" srcset="//res.cloudinary.com/jflower/image/upload/t_landscape-320/{image}.webp, //res.cloudinary.com/jflower/image/upload/t_landscape-640/{image}.webp 2x">
+        <img class="object-contain w-full h-full" src="//res.cloudinary.com/jflower/image/upload/t_landscape-640/{image}.jpg" sizes="(min-width: 640px) 50vw, 100vw" alt="{name}">
       </picture>
     </figure>
   </div>
