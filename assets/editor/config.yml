@@ -10,9 +10,9 @@ media_library:
   config:
     cloud_name: jflower
     api_key: 567231485354962
-    output_filename_only: true
+    # output_filename_only: false
     # use_transformations
-    # user_secure_url
+    # use_secure_url
     # default_trnsformations
     # max_files
     multiple: false
