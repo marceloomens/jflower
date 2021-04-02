@@ -5,5 +5,5 @@ description: A delicious J Flower Cake made from fresh ingredients and original
 image: https://res.cloudinary.com/jflower/image/upload/v1617274835/sesamesoy_btkwoj.jpg
 available: true
 promoted: true
-order: 10
+order: 40
 ---
