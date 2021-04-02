@@ -32,7 +32,7 @@ collections:
     delete: true
     extension: md
     format: yaml-frontmatter
-    # frontmatter_delimiter:
+    frontmatter_delimiter: ---
     slug: "{{slug}}"
     preview_path: /
     # preview_path_date_field: see detailed description below
@@ -40,9 +40,16 @@ collections:
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Image", name: "image", widget: "image", allow_multiple: false}
+      - {label: "Available", name: "available", widget: "boolean", default: true, hint: "Products on sale can be ordered. Products not on sale cannot."}
+      - {label: "Promoted", name: "promoted", widget: "boolean", default: true, hint: "Promoted products are displayed on the home page."}
+      - {label: "Order", name: "order", widget: "number", value_type: "int", default: 10, min: 1, max: 100, step: 1}
     editor:
       preview: false
-    # summary: see detailed description below
-    # sortable_fields: see detailed description below
-    # view_filters: see detailed description below
-    # view_groups: see detailed description below
+    summary: "{{name}}"
+    sortable_fields: ['order', 'name', 'commit_date', 'commit_author']
+    view_filters:
+      - {label: "Promoted", field: "promoted", pattern: true}
+      - {label: "Available", field: "available", pattern: true}
+    view_groups:
+      - {label: "Promoted", field: "promoted"}
+      - {label: "Available", field: "available"}
