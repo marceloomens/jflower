@@ -18,6 +18,12 @@ media_library:
     multiple: false
 site_url: https://jflower.nl
 logo_url: https://jflower.nl/img/logo.png
+locale: en
+show_preview_links: true
+slug:
+  encoding: ascii
+  clean_accents: true
+  sanitize_replacement: -
 collections:
   - name: product
     identifier_field: name
@@ -33,11 +39,12 @@ collections:
     extension: md
     format: yaml-frontmatter
     frontmatter_delimiter: ---
-    slug: "{{slug}}"
+    slug: "{{fields.slug}}"
     preview_path: /
     # preview_path_date_field: see detailed description below
     fields:
       - {label: "Name", name: "name", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Image", name: "image", widget: "image", allow_multiple: false}
       - {label: "Available", name: "available", widget: "boolean", default: true, hint: "Products on sale can be ordered. Products not on sale cannot."}
