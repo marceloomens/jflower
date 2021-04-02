@@ -4,6 +4,7 @@
   export let data;
 
   const products = data.markdown.products;
+  products.filter( a => a.frontmatter.promoted );
   products.sort( (a, b) => {
     if (a.frontmatter.order > b.frontmatter.order ) { return 1; }
     else if (a.frontmatter.order < b.frontmatter.order ) { return -1; }
@@ -32,8 +33,6 @@ section {
 
 <section class="grid justify-center">
 {#each products as product, i}
-{#if product.frontmatter.promoted}
   <Tile id={i} {...product.frontmatter} />
-{/if}
 {/each}
 </section>
