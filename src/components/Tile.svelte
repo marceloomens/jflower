@@ -3,7 +3,7 @@
   export let name = 'J Flower Cake';
   export let description = 'A delicious J Flower Cake made from fresh ingredients and original Asian flower cake recipes and designs.';
   export let image = 'fallback.png';
-  export let sold = false;
+  export let available = true;
 
   let wamsg = encodeURIComponent(`I would like to order a ${name}. (from website)`);
 </script>
@@ -23,7 +23,7 @@ aside:target {
 <article class="relative">
 <a href="#tile-{id}">
 
-  <figure class:out-of-stock="{!sold}">
+  <figure class:out-of-stock="{!available}">
     <picture>
       <source srcset="//j-flower-cake.imgix.net/{image}?fm=webp&q=25&w=1600&ar=1:1&fit=crop" type="image/webp" media="(min-width: 1281px)">
       <source srcset="//j-flower-cake.imgix.net/{image}?fm=webp&q=25&w=1280&ar=1:1&fit=crop" type="image/webp" media="(max-width: 1280px)">
@@ -53,7 +53,7 @@ aside:target {
     </figure>
   </div>
   <p>{description}</p>
-  {#if sold}
+  {#if available}
   <a href="https://wa.me/31611134040?text={wamsg}" target="_blank" class="w-1/2 max-w-xs self-center mt-2" rel="external nofollow noopener noreferrer">
     <button disabled class="w-full border-2 border-white font-display text-white focus:bg-white active:bg-white hover:bg-white focus:border-yellow-600 active:border-yellow-600 hover:border-yellow-600 focus:text-yellow-600 active:text-yellow-600 hover:text-yellow-600 py-2 px-3 rounded-md">Order now</button>
   </a>
