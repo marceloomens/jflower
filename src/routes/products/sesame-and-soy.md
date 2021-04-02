@@ -1,9 +1,10 @@
 ---
-name: Taro Lava cake
+name: Black Sesame & Soy Bean pudding
 description: A delicious J Flower Cake made from fresh ingredients and original
   Asian flower cake recipes and designs.
-image: https://res.cloudinary.com/jflower/image/upload/v1617274835/tarolava_w29lvk.jpg
+slug: sesame-and-soy
+image: https://res.cloudinary.com/jflower/image/upload/v1617274835/sesamesoy_btkwoj.jpg
 available: true
 promoted: true
-order: 20
+order: 40
 ---
