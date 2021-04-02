@@ -4,12 +4,14 @@
   export let description = 'A delicious J Flower Cake made from fresh ingredients and original Asian flower cake recipes and designs.';
   export let image;
 
+  const ASSETS_BASE = /^https:\/\/res.cloudinary.com\/jflower\/image\/upload\//;
+
   if (image) {
     image = image
       // Remove Cloudinary base url
-      .replace(/^https:\/\/res.cloudinary.com\/jflower\/image\/upload\//, '')
+      .replace(ASSETS_BASE, '')
       // Remove file extension
-      .replace(/\.\w{3}$/,'');
+      .replace(/\.\w{3,4}$/,'');
   }
   if (!image) {
     image = 'fallback';
