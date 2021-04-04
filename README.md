@@ -4,7 +4,7 @@
 
 ## License
 
-J Flower Cake - Korean Bean Paste and Buttercream Flower Cakes
+J Flower Cake - Delicious cakes, desert and snacks with an Asian twist
 Copyright (C) 2021  J Flower Cake
 
 This program is free software: you can redistribute it and/or modify

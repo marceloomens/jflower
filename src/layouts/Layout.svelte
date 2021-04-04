@@ -20,8 +20,8 @@
 <svelte:head>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="/style.css" />
-  <title>J Flower Cake — Buttercream and Korean Bean Paste Flowers</title>
-  <meta name="description" content="J Flower Cake — Buttercream and Korean Bean Paste Flowers">
+  <title>J Flower Cake — Delicious cakes, desert and snacks with an Asian twist</title>
+  <meta name="description" content="J Flower Cake — Delicious cakes, desert and snacks with an Asian twist">
 </svelte:head>
 
 <header class="px-2 py-4 text-center bg-gradient-to-b from-green-900">
