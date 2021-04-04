@@ -33,6 +33,6 @@ section {
 
 <section class="grid justify-center">
 {#each products as product, i}
-  <Tile id={i} {...product.frontmatter} />
+  <Tile id={i} product={product.frontmatter} />
 {/each}
 </section>

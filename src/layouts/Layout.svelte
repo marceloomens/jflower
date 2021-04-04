@@ -26,7 +26,7 @@
 
 <header class="px-2 py-4 text-center bg-gradient-to-b from-green-900">
   <h1 class="font-cursive text-4xl sm:text-6xl">J Flower Cake</h1>
-  <p class="font-serif"><i>Delicious cakes, desert and snacks, made with love using locally-sourced ingredients and traditional Asian and Western recipes.</i></p>
+  <p class="font-display">Delicious cakes, desert and snacks, made with love using locally-sourced ingredients and traditional Asian and Western recipes.</p>
 </header>
 
 <main class="flex-grow">
@@ -34,7 +34,7 @@
 </main>
 
 <footer class="px-2 py-4 text-center bg-gradient-to-t from-green-900">
-  <address class="text-sm">
+  <address class="not-italic text-sm">
     <span class="font-cursive text-3xl">J Flower Cake</span><br />
     Middenmolenlaan 9<br />
     2807 DL Gouda

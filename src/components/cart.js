@@ -6,7 +6,7 @@ const stores = new Map();
 
 function createStore( identifier ) {
 
-  const value  = localStorage.getItem( identifier );
+  const value = Number( localStorage.getItem( identifier ) );
   const { subscribe, set, update } = writable( value || DEFAULT );
 
   subscribe(v => {
