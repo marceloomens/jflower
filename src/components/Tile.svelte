@@ -1,10 +1,9 @@
 <script>
   export let id;
-  export let product;
-
-  import CartDetail from './CartDetail.svelte';
-
-  let { name, description, image, available } = product;
+  export let name;
+  export let description;
+  export let image;
+  export let available;
 
   const ASSETS_BASE = /^https:\/\/res.cloudinary.com\/jflower\/image\/upload\//;
 
@@ -57,7 +56,7 @@ aside:target {
     <h2 class="font-display text-center text-2xl">{name}</h2>
     <p class="max-w-prose">{description}</p>
     {#if available}
-      <CartDetail hydrate-client={{product}} />
+      <button disabled class="w-full border-2 border-white font-display text-white focus:bg-white active:bg-white hover:bg-white focus:border-yellow-600 active:border-yellow-600 hover:border-yellow-600 focus:text-yellow-600 active:text-yellow-600 hover:text-yellow-600 py-2 px-3 rounded-md">Add to cart</button>
     {/if}
   </div>
 </aside>

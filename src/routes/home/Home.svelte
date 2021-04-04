@@ -1,13 +1,15 @@
 <script>
   import Tile from '../../components/Tile.svelte';
+  import Cart from '../../components/Cart.svelte';
 
   export let data;
 
-  const products = data.markdown.products;
-  products.filter( a => a.frontmatter.promoted );
+  const products = (data.markdown.products)
+    .map(p => p.frontmatter);
+  products.filter( a => a.promoted );
   products.sort( (a, b) => {
-    if (a.frontmatter.order > b.frontmatter.order ) { return 1; }
-    else if (a.frontmatter.order < b.frontmatter.order ) { return -1; }
+    if (a.order > b.order ) { return 1; }
+    else if (a.order < b.order ) { return -1; }
     else { return 0; }
   } );
 </script>
@@ -32,7 +34,9 @@ section {
 </style>
 
 <section class="grid justify-center">
-{#each products as product, i}
-  <Tile id={i} product={product.frontmatter} />
+{#each products as product, id}
+  <Tile {id} {...product} />
 {/each}
 </section>
+
+<Cart products={products} />
