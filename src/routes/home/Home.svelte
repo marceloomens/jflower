@@ -2,14 +2,6 @@
   import Tile from '../../components/Tile.svelte';
 
   export let data;
-
-  const products = data.markdown.products;
-  products.filter( a => a.frontmatter.promoted );
-  products.sort( (a, b) => {
-    if (a.frontmatter.order > b.frontmatter.order ) { return 1; }
-    else if (a.frontmatter.order < b.frontmatter.order ) { return -1; }
-    else { return 0; }
-  } );
 </script>
 
 <style>
@@ -32,7 +24,7 @@ section {
 </style>
 
 <section class="grid justify-center">
-{#each products as product, i}
-  <Tile id={i} {...product.frontmatter} />
+{#each data.products as product, id}
+  <Tile {id} {...product} />
 {/each}
 </section>
