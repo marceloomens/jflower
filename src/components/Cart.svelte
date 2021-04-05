@@ -1,18 +1,18 @@
 <script>
   export let products;
-  // export let summary = false;
+  export let summary = false;
   export let header = true;
   export let footer = true;
   export let caption = "";
 
   import { onMount } from 'svelte/';
-  import { getStore } from './store.js';
-
-  let store = getStore();
+  import { store } from './store.js';
 
   onMount(() => {
+    // `persist` returns an unsubscribe callback
     store.persist();
   });
+
 </script>
 
 <style>
@@ -34,7 +34,7 @@
   {/if}
   <tbody>
   {#each products as product}
-    <!-- {#if $store[product.slug]} -->
+    {#if !summary || $store[product.slug]}
     <tr>
       <th scope="row">{product.name}</th>
       <td></td>
@@ -45,7 +45,7 @@
       </td>
       <td></td>
     </tr>
-    <!-- {/if} -->
+    {/if}
   {/each}
   </tbody>
   {#if footer}
