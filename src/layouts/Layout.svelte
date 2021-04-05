@@ -7,7 +7,7 @@
   scroll-behavior: smooth;
 }
 :global(body) {
-  background-color: #059669;
+  background-color: #136f63;
   color: #FFF;
   display: flex;
   flex-direction: column;
@@ -24,7 +24,7 @@
   <meta name="description" content="J Flower Cake — Delicious cakes, desert and snacks with an Asian twist">
 </svelte:head>
 
-<header class="px-2 py-4 text-center bg-gradient-to-b from-green-900">
+<header class="px-2 py-4 text-center bg-gradient-to-b from-gray-900">
   <h1 class="font-cursive text-4xl sm:text-6xl">J Flower Cake</h1>
   <p class="font-display">Delicious cakes, desert and snacks, made with love using locally-sourced ingredients and traditional Asian and Western recipes.</p>
 </header>
@@ -33,7 +33,7 @@
   {@html templateHtml}
 </main>
 
-<footer class="px-2 py-4 text-center bg-gradient-to-t from-green-900">
+<footer class="px-2 py-4 text-center bg-gradient-to-t from-gray-900">
   <address class="not-italic text-sm">
     <span class="font-cursive text-3xl">J Flower Cake</span><br />
     Middenmolenlaan 9<br />
