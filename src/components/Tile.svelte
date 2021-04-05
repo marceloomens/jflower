@@ -5,8 +5,8 @@
   export let image;
   export let available;
 
+  // Could be a nice piece of code to move to a filter
   const ASSETS_BASE = /^https:\/\/res.cloudinary.com\/jflower\/image\/upload\//;
-
   if (image) {
     image = image
       // Remove Cloudinary base url

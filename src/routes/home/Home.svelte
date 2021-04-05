@@ -3,15 +3,6 @@
   import Cart from '../../components/Cart.svelte';
 
   export let data;
-
-  const products = (data.markdown.products)
-    .map(p => p.frontmatter);
-  products.filter( a => a.promoted );
-  products.sort( (a, b) => {
-    if (a.order > b.order ) { return 1; }
-    else if (a.order < b.order ) { return -1; }
-    else { return 0; }
-  } );
 </script>
 
 <style>
@@ -34,9 +25,9 @@ section {
 </style>
 
 <section class="grid justify-center">
-{#each products as product, id}
+{#each data.products as product, id}
   <Tile {id} {...product} />
 {/each}
 </section>
 
-<Cart products={products} />
+<Cart products={data.products} />
