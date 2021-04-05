@@ -5,7 +5,14 @@
   export let footer = true;
   export let caption = "";
 
-  import CartDetail from './CartDetail.svelte';
+  import { onMount } from 'svelte/';
+  import { getStore } from './store.js';
+
+  let store = getStore();
+
+  onMount(() => {
+    store.persist();
+  });
 </script>
 
 <style>
@@ -27,12 +34,18 @@
   {/if}
   <tbody>
   {#each products as product}
+    <!-- {#if $store[product.slug]} -->
     <tr>
       <th scope="row">{product.name}</th>
       <td></td>
-      <td><CartDetail hydrate-client={{slug: product.slug}} /></td>
+      <td>
+        <button on:click={store.decrement(product.slug)}>-</button>
+        {$store[product.slug]}
+        <button on:click={store.increment(product.slug)}>+</button>
+      </td>
       <td></td>
     </tr>
+    <!-- {/if} -->
   {/each}
   </tbody>
   {#if footer}

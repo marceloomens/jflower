@@ -30,4 +30,4 @@ section {
 {/each}
 </section>
 
-<Cart products={data.products} />
+<Cart hydrate-client={{products: data.products}} />
