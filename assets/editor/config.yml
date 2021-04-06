@@ -43,10 +43,10 @@ collections:
     preview_path: /
     # preview_path_date_field: see detailed description below
     fields:
-      - {label: "Name", name: "name", widget: "string"}
-      - {label: "Slug", name: "slug", widget: "string"}
-      - {label: "Description", name: "description", widget: "string"}
-      - {label: "Image", name: "image", widget: "image", allow_multiple: false}
+      - {label: "Name", name: "name", widget: "string", required: true}
+      - {label: "Slug", name: "slug", widget: "string", required: true}
+      - {label: "Description", name: "description", widget: "string", required: true}
+      - {label: "Image", name: "image", widget: "image", required: true}
       - label: Variations
         name: variations
         widget: list
@@ -56,7 +56,8 @@ collections:
         minimize_collapsed: false
         label_singular: Variation
         fields:
-          - {label: "Description", name: "description", widget: "string", default: "Regular"}
+          - {label: "Description", name: "description", widget: "string", default: "Regular", required: true}
+          - {label: "Slug", name: "slug", widget: "string", default: "regular, "required: true}
           - {label: "Price", name: "price", widget: "number", value_type: "float", default: 35.0, min: 0.0, step: 1.0}
         # max:
         min: 1
