@@ -57,7 +57,7 @@ collections:
         label_singular: Variation
         fields:
           - {label: "Description", name: "description", widget: "string", default: "Regular", required: true}
-          - {label: "Slug", name: "slug", widget: "string", default: "regular, "required: true}
+          - {label: "Slug", name: "slug", widget: "string", default: "regular", required: true}
           - {label: "Price", name: "price", widget: "number", value_type: "float", default: 35.0, min: 0.0, step: 1.0}
         # max:
         min: 1
