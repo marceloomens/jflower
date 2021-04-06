@@ -2,7 +2,7 @@
 name: Schwarzwalder Kirsch
 slug: schwartzwalder
 description: Schwarzwalder Kirsch
-image: https://res.cloudinary.com/jflower/image/upload/v1617721960/christmas-log_thwcqh.jpg
+image: https://res.cloudinary.com/jflower/image/upload/v1617724796/schwartzwalder_s9in3s.jpg
 variations:
   - description: Regular 6"
     slug: regular
