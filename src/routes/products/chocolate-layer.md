@@ -12,5 +12,5 @@ variations:
     price: 35
 available: true
 promoted: true
-order: 35
+order: 32
 ---
