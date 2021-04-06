@@ -7,7 +7,7 @@
   scroll-behavior: smooth;
 }
 :global(body) {
-  background: linear-gradient(to bottom, #483A58, #63A088 35%, #63A088 35%, #483A58), #63A088;
+  background: linear-gradient(to bottom, #483A58, #63A088 35%, #63A088 35%, #483A58), #483A58;
   color: #FFF;
   display: flex;
   flex-direction: column;
