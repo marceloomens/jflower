@@ -9,7 +9,7 @@ variations:
     slug: regular
     price: 32
   - description: Large 8"
-    slug: regular
+    slug: large
     price: 42
 available: true
 promoted: true
