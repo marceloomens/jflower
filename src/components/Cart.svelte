@@ -34,18 +34,20 @@
   {/if}
   <tbody>
   {#each products as product}
-    {#if !summary || $store[product.slug]}
+  {#each product.variations as variation}
+    {#if !summary || $store[`${variation.slug}/${product.slug}`]}
     <tr>
-      <th scope="row">{product.name}</th>
+      <th scope="row">{variation.description} {product.name}</th>
       <td></td>
       <td>
-        <button on:click={store.decrement(product.slug)}>-</button>
-        {$store[product.slug]}
-        <button on:click={store.increment(product.slug)}>+</button>
+        <button on:click={store.decrement(`${variation.slug}/${product.slug}`)}>-</button>
+        {$store[`${variation.slug}/${product.slug}`]}
+        <button on:click={store.increment(`${variation.slug}/${product.slug}`)}>+</button>
       </td>
       <td></td>
     </tr>
     {/if}
+  {/each}
   {/each}
   </tbody>
   {#if footer}
