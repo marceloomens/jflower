@@ -25,6 +25,6 @@ section {
 
 <section class="grid justify-center">
 {#each data.products as product, id}
-  <Tile {id} {...product} />
+  <Tile {id} {product} />
 {/each}
 </section>

@@ -1,9 +1,8 @@
 <script>
   export let id;
-  export let name;
-  export let description;
-  export let image;
-  export let available;
+  export let product;
+
+  let {name, description, slug, image, available} = product;
 
   // Could be a nice piece of code to move to a filter
   const ASSETS_BASE = /^https:\/\/res.cloudinary.com\/jflower\/image\/upload\//;
@@ -56,7 +55,7 @@ aside:target {
       </picture>
     </figure>
     <h2 class="font-display text-center text-2xl">{name}</h2>
-    <p class="max-w-prose">{description}</p>
+    <p class="max-w-prose">{description} <a href="/{slug}/" title="{name}">Read more&hellip;</a></p>
     {#if available}
       <a href="https://wa.me/31611134040?text={wamsg}" target="_blank" class="w-1/2 max-w-xs self-center mt-2" rel="external nofollow noopener noreferrer">
         <button class="w-full border-2 border-white font-display text-white focus:bg-yellow-50 active:bg-yellow-50 hover:bg-yellow-50 focus:border-yellow-600 active:border-yellow-600 hover:border-yellow-600 focus:text-yellow-600 active:text-yellow-600 hover:text-yellow-600 py-2 px-3 rounded-md">Add to cart</button>
