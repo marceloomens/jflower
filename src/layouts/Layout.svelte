@@ -22,7 +22,6 @@
   <link rel="stylesheet" href="/style.css" />
   <title>J Flower Cake — Delicious cakes, desert and snacks with an Asian twist</title>
   <meta name="description" content="J Flower Cake — Delicious cakes, desert and snacks with an Asian twist">
-  <script defer src="https://cdn.pushbird.com/9e13b929fbe14e06a79328210d5c80a3/pushbird.js"></script>
 </svelte:head>
 
 <header class="px-2 py-4 text-center">
