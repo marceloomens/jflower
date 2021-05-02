@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="/style.css" />
   <title>J Flower Cake — Delicious cakes, desert and snacks with an Asian twist</title>
   <meta name="description" content="J Flower Cake — Delicious cakes, desert and snacks with an Asian twist">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewbox='0 0 16 16'><text x='0' y='14'>🌸</text></svg>">
 </svelte:head>
 
 <header class="px-2 py-4 text-center">
