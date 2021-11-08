@@ -10,7 +10,7 @@ variations:
   - description: Large
     slug: large
     price: 45
-available: true
+available: false
 promoted: true
 order: 6
 ---

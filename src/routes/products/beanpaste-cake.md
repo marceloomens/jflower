@@ -10,7 +10,7 @@ variations:
   - description: Large 8"
     slug: large
     price: 55
-available: true
+available: false
 promoted: true
 order: 35
 ---

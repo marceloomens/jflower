@@ -7,7 +7,7 @@ variations:
   - description: Regular
     slug: regular
     price: 40
-available: true
+available: false
 promoted: true
 order: 10
 ---

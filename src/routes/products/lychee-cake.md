@@ -1,7 +1,7 @@
 ---
-name: Lychee cake
-slug: lychee-cake
-description: Lychee cake
+name: Raspberry Romance cake
+slug: raspberry-romance
+description: Raspberry Romance
 image: https://res.cloudinary.com/jflower/image/upload/v1617724794/lychee-cake_abue6p.jpg
 variations:
   - description: Regular 6"
