@@ -3,7 +3,7 @@ name: Oreolis
 slug: oreolis
 description: A delicious J Flower Cake made from fresh ingredients and original
   Asian flower cake recipes and designs.
-image: https://res.cloudinary.com/jflower/image/upload/v1617274838/oreolis_vbtm0l.jpg
+image: https://res.cloudinary.com/jflower/image/upload/v1636407226/new-oreolis_uudjwb.jpg
 variations:
   - description: Regular 6"
     slug: regular
